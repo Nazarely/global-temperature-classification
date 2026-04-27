@@ -11,8 +11,8 @@
 # Fuente: Berkeley Earth / Kaggle
 # https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data
 #
-# Autor: [Tu nombre]
-# Fecha: [Fecha]
+# Autor: [Nazarely Gomez Abularach]
+# Fecha: [junio 2024]
 # =============================================================================
 
 
