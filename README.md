@@ -109,7 +109,6 @@ Ensemble de 100 árboles con `mtry = 3`, usando todas las variables disponibles.
 | Árbol ajustado      | —         |
 | **Random Forest**   | **—**     |
 
-*Completar con los resultados reales luego de ejecutar el análisis.*
 
 ---
 
