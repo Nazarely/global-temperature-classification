@@ -1,49 +1,61 @@
-# History files
+# =============================================================================
+# .gitignore — Clasificación de Temperaturas Globales
+# =============================================================================
+
+# ----- Datos -----
+# No subir datasets pesados ni datos sensibles
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.zip
+*.csv
+
+# Mantener la estructura de carpetas aunque estén vacías
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!outputs/figures/.gitkeep
+
+# ----- R específico -----
+# Historial y entorno de sesión
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
-.RDataTmp
-
-# User-specific files
 .Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
 .Rproj.user/
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
+# Archivos de proyecto RStudio
+*.Rproj
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
+# Cache de paquetes
+packrat/lib*/
+packrat/src/
 
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
+# renv (manejo de entornos)
+renv/library/
+renv/staging/
 
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
+# ----- Outputs generados -----
+# Los gráficos se regeneran al correr el script
+outputs/figures/*.png
+outputs/figures/*.pdf
+outputs/figures/*.svg
 
-# R Environment Variables
-.Renviron
+# ----- Sistema operativo -----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverrideIcon
 
-# pkgdown site
-docs/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# translation temp files
-po/*~
+# Linux
+*~
 
-# RStudio Connect folder
-rsconnect/
+# ----- IDEs y editores -----
+.vscode/
+.idea/
+*.swp
+*.swo
